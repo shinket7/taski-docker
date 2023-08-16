@@ -1,0 +1,13 @@
+name: Main Taski Workflow
+on:
+  push:
+    branches:
+      - main
+jobs:
+  check-out-and-print-tree:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Pring project tree
+        run: tree .
