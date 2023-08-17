@@ -66,7 +66,7 @@ jobs:
           tags: ${{ secrets.DOCKER_USERNAME }}/taski_backend:latest
 
   frontend_tests:
-    runs-on: ubuntu--20.04
+    runs-on: ubuntu-20.04
 
     steps:
     - name: Check out the repo
