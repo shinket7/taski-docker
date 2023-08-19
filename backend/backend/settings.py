@@ -11,7 +11,10 @@ SECRET_KEY = getenv(
 
 DEBUG = getenv('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost'
+]
 
 
 # Application definition
